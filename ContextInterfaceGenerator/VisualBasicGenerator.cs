@@ -313,6 +313,7 @@ namespace ContextInterfaceGenerator
         {
             Writer.WriteLine(Tabs + string.Format("{1} Interface {0}", InterfaceName, Modifier.ToLower() == "internal" ? "Friend" : Modifier));
             _tabCount++;
+            Writer.WriteLine(Tabs + "Implements IDisposable");
         }
 
         private void GenerateInterface()

@@ -128,7 +128,7 @@ namespace ContextInterfaceGenerator
 
         private void WriteInterfaceHeader()
         {
-            Writer.WriteLine(Tabs + string.Format("{1} partial interface {0}", InterfaceName, Modifier));
+            Writer.WriteLine(Tabs + string.Format("{1} partial interface {0} : IDisposable", InterfaceName, Modifier));
             OpenBrace();
         }
 
