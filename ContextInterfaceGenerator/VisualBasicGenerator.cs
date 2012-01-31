@@ -333,7 +333,6 @@ namespace ContextInterfaceGenerator
             Writer.WriteLine(Tabs + "Sub CreateDatabase()");
             Writer.WriteLine(Tabs + "Function DatabaseExists() As Boolean");
             Writer.WriteLine(Tabs + "Sub DeleteDatabase()");
-            Writer.WriteLine(Tabs + "Sub Dispose()");
             Writer.WriteLine(Tabs + "Function ExecuteCommand(ByVal command As String, ByVal ParamArray parameters As Object()) As Integer");
             Writer.WriteLine(Tabs + "Function ExecuteQuery(Of TResult)(ByVal query As String, ByVal ParamArray parameters As Object()) As IEnumerable(Of TResult)");
             Writer.WriteLine(Tabs + "Function ExecuteQuery(ByVal elementType As Type, ByVal query As String, ByVal ParamArray parameters As Object()) As IEnumerable");

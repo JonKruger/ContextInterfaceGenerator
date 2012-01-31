@@ -149,7 +149,6 @@ namespace ContextInterfaceGenerator
             Writer.WriteLine(Tabs + "void CreateDatabase();");
             Writer.WriteLine(Tabs + "bool DatabaseExists();");
             Writer.WriteLine(Tabs + "void DeleteDatabase();");
-            Writer.WriteLine(Tabs + "void Dispose();");
             Writer.WriteLine(Tabs + "int ExecuteCommand(string command, params object[] parameters);");
             Writer.WriteLine(Tabs + "IEnumerable<TResult> ExecuteQuery<TResult>(string query, params object[] parameters);");
             Writer.WriteLine(Tabs + "IEnumerable ExecuteQuery(Type elementType, string query, params object[] parameters);");
